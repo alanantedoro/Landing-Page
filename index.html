@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Landing Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      
+    />
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+    <body>
+<section>
+    <nav class="navbar navbar-expand-md">
+      <img class="logo" src="images/logo.png">
+      <a class="nav-title navbar-brand">Marimbae Fraternita</a>
+    </nav>
+</section>
+
+<section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="main-image" src="images/main.png">
+        </div>
+        <div class="col-lg-6 main-element">
+          <p class="main-text-element">
+            La fraternidad Marimba es un selecto club de personas que no encajan en otros sitios.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="contact">
+  <i class="fas fa-arrow-circle-down fa-4x" id="arrow"></i>
+  <h1 class="contact-title">Ponte en contacto!</h1>
+  <div class="container-fluid row contact-container">
+    <form method="POST" class="col-lg-6">
+      <div class="input-group mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-dark" type="submit">Únete!</button>
+        </div>
+      </div>
+    </form>
+    <div class="col-lg-6">
+      <h2 class="contact-text">Aplica a unirte a nuestra gran fraternidad. Envianos tu contacto y nosotros evaluaremos tu perfil.</h2>
+    </div>
+  </div>
+
+</section>
+
+ <script src="app.js">
+
+  window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+      var change = document.getElementById("arrow");
+      change.classList.add("fa-arrow-circle-down-static");
+    } else {
+      change.classList.add("fa-arrow-circle-down");
+    }
+};
+
+ </script> 
+  </body>
+</html>
